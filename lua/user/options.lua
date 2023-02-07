@@ -18,7 +18,7 @@ local options =
     splitbelow     = true                        , -- force all horizontal splits to go below current window
     splitright     = true                        , -- force all vertical splits to go to the right of the current window
     swapfile       = false                       , -- creates a swapfile
-    termguicolors  = true                        , -- set term gui colors (most terminals support this)
+    --termguicolors  = true                        , -- set term gui colors (most terminals support this)
     timeoutlen     = 1000                        , -- time to wait for a mapped sequence to complete (in milliseconds)
     undofile       = true                        , -- enable persistent undo
     updatetime     = 300                         , -- faster completion (4000ms by default)
@@ -33,9 +33,8 @@ local options =
     signcolumn     = "yes"                       , -- always show the sign column, otherwise it would shift the text each time
     wrap           = false                       , -- display lines as one long line
     scrolloff      = 8                           ,
-    sidescrolloff  = 8
-    -- vim.opt.guifont = "monospace:h17"
-
+    sidescrolloff  = 8                           ,
+    --guifont = "monospace:h17"
 }
 
 for k, v in pairs(options) do
